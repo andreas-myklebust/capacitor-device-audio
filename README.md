@@ -13,24 +13,36 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`playVoiceCallAudio(...)`](#playvoicecallaudio)
+* [`playRingAudio(...)`](#playringaudio)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### playVoiceCallAudio(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+playVoiceCallAudio(options: { src: string; }) => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ src: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+--------------------
+
+
+### playRingAudio(...)
+
+```typescript
+playRingAudio(options: { src: string; }) => Promise<void>
+```
+
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ src: string; }</code> |
 
 --------------------
 

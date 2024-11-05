@@ -1,3 +1,4 @@
 export interface CapacitorDeviceAudioPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  playVoiceCallAudio(options: { src: string }): Promise<void>;
+  playRingAudio(options: { src: string }): Promise<void>;
 }
